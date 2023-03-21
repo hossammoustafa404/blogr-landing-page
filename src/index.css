@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply px-[15px] mx-auto xs:max-w-full sm:max-w-[750px] md:max-w-[970px] lg:max-w-[1170px];
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-center-x {
+    @apply flex justify-center;
+  }
+
+  .flex-center-y {
+    @apply flex items-center;
+  }
+  .filled-btn {
+    @apply capitalize font-Overpass font-bold text-[#ff3d54] text-h4 bg-heavyWhite hover:bg-[#f87c88] hover:text-lightWhite transition-[0.2s] px-[1.5rem] py-[0.2rem] rounded-[20px];
+  }
+  .outlined-btn {
+    @apply capitalize font-Overpass font-bold text-heavyWhite text-h4  hover:bg-heavyWhite hover:text-[#ff3d54] transition-[0.2s] px-[1.5rem] py-[0.2rem] rounded-[20px] border-[2px] border-heavyWhite;
+  }
+}
+
+/*Start Global Rules */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  font-family: "Ubuntu", sans-serif;
+  /* color:#ff8f70 ; */
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*End Global Rules */
+
+/* Start Menu Styles */
+.menu > ul > li > div {
+  justify-content: center;
+}
+
+.menu > ul > li {
+  margin-bottom: 2rem;
+}
+.menu > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.menu a {
+  color: #496379;
+  font-size: 1.2rem;
+}
+.menu a:hover {
+  color: #496379;
+}
+.menu a:focus {
+  color: #91969f;
+}
+
+/* End Menu Styles */
